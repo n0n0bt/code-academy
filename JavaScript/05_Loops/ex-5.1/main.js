@@ -1,30 +1,39 @@
-let maxValue = parseInt(prompt("Enter Max value for guessing."));
-
-if(maxValue == NaN){
-    let isNaN = true;
-    while(true){
-        maxValue = parseInt(prompt("Enter Max value for guessing."));
-
-        if(maxValue !== NaN) {
-            isNaN = false;
+let max = parseInt(prompt("Enter max value for guessing."));
+if (isNaN(max)) {
+    let isNumber = false;
+    while (!isNumber) {
+        max = parseInt(prompt("Enter max value for guessing."));
+        if (!isNaN(max)) {
+            isNumber = true; 
         }
     }
-}
+}  
 
-let guessingNum = Math.floor(Math.random() * (maxValue + 1));
-
-alert(guessingNum);
+max++;
+let guessingNumber = Math.floor(Math.random() * max);
+alert(guessingNumber);
 
 let rightNumber = false;
-maxValue--;
-while(!rightNumber){
-    let userNumber = parseInt(prompt("Enter a number between 0 and " + maxValue));
-    if(guessingNum === userNumber){
-        alert("You've WON ! ! !")
+
+max--;
+while (!rightNumber) {
+    let userNumber = parseInt(prompt("Enter a number between 0 and " + max));
+    if (isNaN(userNumber)) {
+        let isNumber = false;
+        while (!isNumber) {
+            userNumber = parseInt(prompt("Enter a number between 0 and " + max));
+            if (!isNan(userNumber)) {
+                isNumber = true; 
+            }
+        }
+    }  
+    
+    if (guessingNumber === userNumber) {
+        alert("You guessed right! You won the game!");
         rightNumber = true;
-    }else if(guessingNum < userNumber){
-        alert("You Guessed higher!");
+    } else if (guessingNumber < userNumber) {
+        alert("You guessed highter then the number!");
     } else {
-        alert("You Guessed lower !");
+        alert("You guessed lower then the number!");
     }
 }
