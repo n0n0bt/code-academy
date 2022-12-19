@@ -1,0 +1,124 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 20px 0 20px;
+    font-size: 20px;
+    height: 300vh;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.section {
+    background-color: rgb(110, 110, 110);
+    display: flex;
+    padding-top: 100px;
+    
+}
+.logo {
+    background-color: rgb(110, 110, 110);
+    padding-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.some-txt {
+    display: grid;
+    width: 50%;
+    float: left;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+}
+
+.some-img {
+    position: absolute;
+    right:0;
+    top: 18%;
+    width: 50%;
+    display: inline;
+}
+
+.some-img img {
+    width: 700px;
+
+}
+
+.clear-both {
+    clear: both;
+}
+
+.section2 h1, p{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.card {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    left: 70px;
+    background: #52ffcb;
+    border-radius: 15px;
+    margin-right: 80px;
+    margin-left: 20px;
+    
+}
+
+.card img {
+    width: 150px;
+    position: absolute;
+    left: 47px;
+    top: 20px;
+}
+
+.card-body {
+    position: absolute;
+    width: 250px;
+    height: 170px;
+    bottom: 0;
+    background: rgb(223, 126, 0);
+    border-radius: 15px;
+    z-index: 3;
+
+}
+.card-body p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card1 {
+    left: 400px;
+}
+
+.card2 {
+    left: 720px;
+}
+
+.card3 {
+    left: 1040px;
+}
+
+.section3 {
+    margin-top: 500px;
+    text-align: center;
+    background-color: grey;
+}

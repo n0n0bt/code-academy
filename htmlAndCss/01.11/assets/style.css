@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+header {
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.main-menu-item a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 80px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.has-sub-menu {
+    position: relative;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    left: 0%;
+    right: 0;
+    top: 20px;
+}
+
+.main-menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu-item a {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 50%; 
+    height: 50%;
+    margin-top: 30% ;
+    
+}
+
+.btn-outline {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+.hero {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 130px;
+    gap: 50px;
+
+}
+
+.col-50 {
+    width: 50%;
+
+}
+
+.hero-img {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.col-50 img {
+    width: 100%;
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+    margin-bottom: 50px;
+}
+
+.hero-content a {
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: 800;
+}
+
+.hero-content {
+    margin-bottom: 50px;
+}
+
+.hero-footer {
+    display: flex;
+    gap: 30px;
+    
+
+}
+
+.hero-footer img {
+    align-self: center;
+    max-width: 100px;
+}
+
+.icon-menu {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .main-nav{
+        display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .hero {
+        flex-wrap: wrap-reverse;
+    }
+    .col-50 {
+        width: 100%;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+}
+

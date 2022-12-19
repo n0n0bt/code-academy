@@ -1,0 +1,26 @@
+.clear-both {
+    clear: both;
+}
+*{
+    color: wheat;
+}
+.bg-color {
+    background-color: antiquewhite;
+    padding: 70px;
+}
+
+
+.bg-brown {
+    background-color:  #39141b;
+    padding: 20px;
+}
+
+.section-left {
+    float: left;
+    max-width: 400px;
+}
+
+.section-right {
+   float: right;
+   max-width: 800px;
+}

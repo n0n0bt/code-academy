@@ -1,0 +1,112 @@
+
+body {
+    background-color: black;
+    color: rgb(57, 91, 56);
+    margin: 20px;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1 {
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    text-decoration: none;
+    border: 1px solid darkgreen;
+    background-color: #506673;
+    color: wheat;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.form {
+    color: aqua;
+}
+
+.sign-up {
+    text-decoration: none;
+    border: 1px solid darkgreen;
+    background-color: #506673;
+    color: wheat;
+    border-radius: 8px;
+    padding: 10px;
+
+    
+}
+
+.body-table {
+    background-color: aliceblue;
+
+}
+
+.nav-bar {
+    padding: 30px;
+    width: 100%;
+}
+
+.nav-bar a {
+    padding-right: 30px;
+    text-decoration: none;
+    
+}
+
+
+.section {
+    margin: 50px;
+}
+
+.head {
+    text-align: center;
+    
+}
+
+
+
+table {
+    text-align: center;
+    margin-left:100px;
+    
+}
+
+.section1 {
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img1 {
+    text-align: right;
+}
+
+#game {
+    text-align: center;
+}
+
+#choices button {
+font-size: 16px;
+padding: 10px 20px;
+margin: 10px;
+border: none;
+border-radius: 5px;
+background-color: #333;
+color: #fff;
+}
+
+#choices button:hover {
+background-color: #666;
+}
+
+#result {
+font-size: 18px;
+margin: 20px 0;
+}

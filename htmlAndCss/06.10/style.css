@@ -1,0 +1,65 @@
+
+.container {
+    padding: 30px;
+    border: 3px solid black;
+}
+
+
+
+.m-30 {
+    background-color: blanchedalmond;
+    height: 90px;
+    margin: 30px;
+    border: 3px solid rgb(168, 97, 4);
+    padding: 20px;
+}
+
+.m-31 {
+    background-color: rgb(202, 135, 33);
+    color: rgb(230, 214, 172);
+    height: 100px;
+    margin: 50px;
+    border: 3px solid rgb(245, 192, 79);
+    padding: 40px;
+}
+
+.m-32 {
+    background-color: rgb(23, 18, 94);
+    color: white;
+    height: 50px;
+    margin: 60px 100px; 
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.m-33 {
+    background-color: rgb(94, 18, 56);
+    color: rgb(231, 143, 220);
+    margin: 0 300px 0 100px;
+    height: 60px;
+    border: 3px solid black;
+    
+   
+}
+
+.m-28 {
+    margin: 30px 0 30px 0;
+}
+
+.parent {
+    padding: 0;
+}
+
+.blog-post {
+    margin: 15px;
+}
+
+.blog-post.mb-15:last-child {
+
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}

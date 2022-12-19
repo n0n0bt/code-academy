@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#0E1323; 
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+.card {
+    position: absolute;
+    width: 255px;
+    height: 518px;
+    left: 165px;
+    top: 253px;
+    background: #1C204B;
+    border-radius: 15px;
+}
+
+.card-inside {
+    position: absolute;
+    width: 255px;
+    height: 354px;
+    background: #5747EA;
+    border-radius: 15px;
+}
+
+.jeremy {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 15px;
+    top: 10px;
+
+}
+
+.jeremy > img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.card-inside p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+.card-inside h1 {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 47px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+
+
+.card-footer {
+    margin-top: 380px;
+    margin-left: 30px;
+}
+
+
+.card-footer a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 8px;
+}
+
+
+.top-card {
+    position: absolute;
+    width: 255px;
+    height: 160px;
+    left: 450px;
+    top: 253px;
+    background: #FF8B64;
+    border-radius: 15px;
+}
+.top-card img {
+    float: right;
+    margin-right: 20px;
+    width: 55px;
+}
+
+
+
+.cards-inside {
+    position: absolute;
+    width: 255px;
+    height: 199px;
+    top: 55px;
+    background: #1C204B;
+    border-radius: 15px;
+    
+}
+
+.cards-inside img {
+    width: 30px;
+    margin-top: -20px;
+}
+
+.cards-inside p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 30px;
+}
+
+.cards-inside h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 66px;
+    margin: 10px;
+    margin-left: 30px;
+
+}
+
+.bottom-card {
+    position: absolute;
+    width: 255px;
+    height: 160px;
+    left: 450px;
+    top: 520px;
+    background: #4BCF82;
+    border-radius: 15px;
+}
+
+.cards-inside:hover {
+    background-color: #33397A;
+}
+
+.bottom-card > img {
+    float: right;
+    margin-right: 20px;
+    width: 70px;
+    
+}
+
+.cards-inside-bottom {
+    position: absolute;
+    width: 255px;
+    height: 199px;
+    top: 55px;
+    background: #1C204B;
+    border-radius: 15px;
+    
+}
+
+.cards-inside-bottom img {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+.cards-2 {
+    position: absolute;
+    margin-left: 260px;
+}
+
+.cards-3 {
+    position: absolute;
+    margin-left: 520px;
+}
+
+.top-card-2 {
+    background-color: #55C2E6;
+}
+
+.bottom-card-2 {
+    background-color: #7335D2;
+}
+
+.top-card-3 {
+    background-color: #FF5E7D;
+}
+
+.bottom-card-3 {
+    background-color: #F1C75B;
+}
+
+
+
+.work > p {
+    float: left;
+    display: inline;
+    width: 100%;
+
+}
+
+.work img {
+    float: right;
+    margin-top: -40px;
+
+}

@@ -1,0 +1,42 @@
+body {
+    height: 300vh;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.container p{
+   text-align: center;
+   font-size: larger;
+}
+
+.container1 {
+    position: relative;
+    margin-top: 60px;
+    max-width: 400px;
+    background-color: brown;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+.container1 p{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container1 img {
+    max-width: 100px;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+
+}

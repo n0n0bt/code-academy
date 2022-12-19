@@ -1,0 +1,54 @@
+body {
+    margin: 60px;
+
+}
+
+
+.section {
+
+}
+
+.bg-properties {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.img-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(156, 89, 6);
+}
+
+.bg-img {
+
+    background-image: url("https://assets.wallpapersin4k.org/uploads/2017/04/WWW-HD-Background-Wallpaper-Com-5.jpg");
+
+} 
+
+.bg-img-1 {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/10/Autumn-Forest-Background-Download-Free.jpg");
+
+} 
+
+.bg-img-2 {
+    background-image: url("https://1.bp.blogspot.com/-nrF8VmSZ6Dg/UEhjEFYAE_I/AAAAAAAABDw/fo2jIRWPg1s/w1200-h630-p-k-no-nu/wildlife-free-nature-best-full-HD-nature-background-wallpaper-for-laptop-widescreen.jpg");
+}
+
+.bg-img-3 {
+    background-image: url("http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/588e803b0911a665_marek-piwnicki-NxGcrC8sLss-unsplash/i/Starry-Night-Zoom-Background.jpg");
+}   
+
+.bg-img-4 {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Nature-HD-Wallpaper-Background.jpeg");
+}
+
+.bg-img-5 {
+    background-image: url("https://getwallpapers.com/wallpaper/full/4/6/4/1116944-background-nature-1920x1200-images.jpg");
+}
+

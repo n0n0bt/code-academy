@@ -1,0 +1,53 @@
+body{
+    margin: 60px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 30px;
+    color: rgb(64, 64, 235);
+}
+
+.icon {
+    color: black;
+    margin: 0 10px;
+}
+
+p {
+    padding: 10px 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.bfr::before {
+    content: "§";
+    position: absolute;
+    margin-left: -30px;
+    margin-right: 20px;
+    color: black;
+}
+.note-1 {
+    background-color: rgba(170, 247, 170, 0.637);
+    border-left: 8px solid green;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+.note-2 {
+    background-color: rgb(250, 211, 161);
+    border-right: 8px solid rgb(248, 152, 27);
+    padding: 10px;
+    text-align: center;
+}
+

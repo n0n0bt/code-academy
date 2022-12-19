@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background1.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+
+.trial {
+    margin: 20px;
+}
+
+
+.inline-div {
+    width: 500px;
+    display: inline-block;
+    margin: auto;
+    
+}
+
+.margin-div{
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    position: relative;
+    bottom: 100px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+
+}
+
+.p1 {
+    color: white;
+    text-align: left;
+    
+
+}
+
+.free-trial-btn {
+    text-align: center;
+    width: 100%;
+
+    margin-bottom: 30px;
+    border: 1px solid rgb(77, 21, 114);
+    background-color:rgb(77, 21, 114) ;
+    color: white;
+    padding: 15px;
+    border-radius: 13px;
+    cursor: pointer;
+
+}
+
+.free-trial-btn:hover {
+    background-color: lightskyblue;
+}
+
+span {
+    font-weight: 700;
+}
+
+.sing-up-form {
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: white;
+    
+    
+}
+
+.form-deco {
+    padding:25px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 7px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.submit-btn {
+    color: white;
+    border: 1px solid green;
+    background-color: green;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: lightgreen;
+    border: lightgreen;
+}
+
+.terms {
+    margin-bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: red;
+
+}

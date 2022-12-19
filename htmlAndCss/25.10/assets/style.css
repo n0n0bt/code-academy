@@ -1,0 +1,23 @@
+.bg-red {
+    background-color: rgba(34, 216, 146, 0.76) ;
+    color: #fff;
+    padding: 8px;
+    height: auto;
+    width: 100%;
+    border: 1px solid rgb(229, 255, 113);
+    border-radius: 10px;
+    
+
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 939px;
+    padding: 10px 10px;
+    align-content: center;
+    background: rgb(108, 155, 108);    
+}
+

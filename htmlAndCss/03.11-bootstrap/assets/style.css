@@ -1,0 +1,8 @@
+.rectangle {
+    height: 60px;
+}
+
+.container {
+    max-width: 1720px !important;
+    text-align: center;
+}

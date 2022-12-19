@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acc Opening Form</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>Account Opening Form</h2>
+        </div>
+        <hr>
+
+        <form action="/some-location" method="GET">
+            <div>
+                <span>Full Name *</span>
+                <label for="prefix">Prefix</label>
+                <select name="prefix" id="prefix-opt">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                </select>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required><br><br>
+            </div>
+
+            <div>
+                <label for="acc-types">Account Type</label>
+                <select name="acc_types" id="acc-types" required>
+                    <option value="normal">Normal</option>
+                    <option value="assets">Assets</option>
+                    <option value="expenses">Expenses</option>
+                    <option value="liabilities">Liabilities</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                <label for="id-number">ID Card Number</label>
+                <input type="number" placeholder="ex: 1234" id="id-number"><br><br>
+            </div>
+
+            <div>
+                <label for="m-name">Mother's Maiden Name *</label>
+                <input type="text" id="m-name" required><br><br>
+            </div>
+
+            <div>
+            <label for="mon-sal">Monthly Salary *</label>
+            <input type="number" placeholder="EUR" id="mon-sal"> <br><br>
+            </div>
+
+            <div>
+                <span>Gender *</span>
+                <label for="male">Male</label>
+                <input type="radio" name="true_false" id="male" value="Male" required >
+                <label for="female">Female</label>
+                <input type="radio" name="true_false" id="female" value="Female" required ><br><br>
+            </div>
+
+            <div>
+                <label for="birth">Date of Birth *</label>
+                <select name="birth_months" id="birth" required>
+                    <option value=""></option>
+                    <option value="januar">Januar</option>
+                    <option value="february">February</option>
+                    <option value="mart">Mart</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="juni">Juni</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="sepmteber">September</option>
+                    <option value="oktober">Oktober</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+
+
+                <select name="birth-days" id="" required>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+
+                <select name="birth-years" id="" required>
+                    <option value=""></option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                </select> <br><br>
+            </div>
+
+            <div>
+                <span>Marital Status *</span><br>
+                <label for="single">Single</label>
+                <input type="radio" name="true_false" id="single" required>
+                <label for="married">Married</label>
+                <input type="radio" name="true_false" id="married" required><br>
+                <label for="divorced">Divorced</label>
+                <input type="radio" name="true_false" id="divorced" required>
+                <label for="widow">Widow(er)</label>
+                <input type="radio" name="true_false" id="widow" required><br><br>
+            </div>
+
+            <div>
+                <label for="tel-num">Telephone Number *</label>
+                <input type="number" placeholder="Area Code" id="tel-num" required> - 
+                <input type="number" placeholder="Phone Number" required><br><br>
+            </div>
+            <hr>
+            <button value="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+</body>
+</html>

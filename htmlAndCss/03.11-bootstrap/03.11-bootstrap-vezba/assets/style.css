@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    cursor: pointer !important;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul a {
+    padding-right: 10px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    padding: 30px 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 1px solid #fff;
+}
+.container {
+    max-width: 1904px;
+}
+.hero-section {
+    position: relative;
+    background: url('/assets/images/desktop/image-hero.jpg');
+    min-height: 700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+}
+.container1 {
+    margin:100px 0;
+    padding-top: -90px;
+}
+.product {
+    position: relative;
+    background-color: #e6e6e6;
+    padding-top: 150px;
+    padding-bottom: 40px;
+
+}
+
+.product-img {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img img {
+    max-width: 200px;
+}
+
+.bg-orange {
+    background-color: rgb(255, 126, 21);
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.btn-bg-black {
+    background-color: black;
+    color: white;
+
+}
+
+.speaker-img {
+    position:relative;
+    bottom: -210px;
+}
+
+.speaker-img img {
+    width: 600px;
+    height: 600px;
+}
+    
+.align-center {
+    position: relative;
+    
+}
+
+.col {
+    flex-direction: column;
+}
