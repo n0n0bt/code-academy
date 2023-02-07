@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-8</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            margin-top: 5em;
+        }
+        button{
+            background-color: grey;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        p {
+            text-shadow: 5px 1px 5px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="magic">Some magic Paragraph which might disappear and appear!</p>
+    <button onclick="toggleDisplay()">Try Me!</button>
+
+    <script>
+
+        function toggleDisplay() {
+            let p = document.getElementById("magic");
+
+            if (p.style.display === "none") {
+                p.style.display = "block";
+            } else {
+                p.style.display = "none";
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
