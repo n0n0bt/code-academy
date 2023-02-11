@@ -4,6 +4,8 @@ let color = document.getElementById("color");
 
 colorChanger = document.getElementById("colorChanger");
 
+color.addEventListener("input", updateFirst, false);
+color.addEventListener("change", watchColorPicker, false);
 
 function ChangeMe() {
     if ((colorChanger = " ")) {
@@ -13,3 +15,5 @@ function ChangeMe() {
         alert("enter a HEX number of color");
     }
 }
+
+

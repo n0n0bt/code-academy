@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan-Game</title>
+    <style>
+    body {
+        box-sizing: border-box;
+        margin-top: 10em;
+    }
+    .gameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+    margin-top: 20px;
+    }
+
+    .letters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+    margin-top: 20px;
+    }
+
+    .boxE {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .box {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    cursor: pointer;
+    }
+
+    .boxD {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    cursor: default;
+    }
+
+    button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+
+    .score {
+    font-size: 20px;
+    margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="gameArea">
+        <div class="score"></div>
+        <div class="puzzle"></div>
+        <div class="letters"></div>
+        <button>Start Game</button>
+        <button class="reset-button">Reset</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
