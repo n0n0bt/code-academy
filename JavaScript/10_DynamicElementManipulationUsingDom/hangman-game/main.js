@@ -23,7 +23,6 @@ function startGame() {
         mainGame.word = phrases.shift();
         mainGame.solution = mainGame.word.split("");
         builder();
-
     }
 }
 

@@ -1,27 +1,22 @@
-class Animal {
-    constructor(speed, race, sex, location, age ){
-        this.speed = speed;
-        this.race = race;
-        this.sex = sex;
-        this.location = location;
-        this.age = age;
-    }
+let someString = "This is some STRING with Upper and lowercase words";
 
-    print(){
-        console.log(this.speed);
-    }
+function manipulate(val) {
+    let lowerCase = val.toLowerCase();
+    let splitted = lowerCase.split(" ");
+    let capitalized = [];
+
+    
+
+    splitted.forEach(function (word) {
+        const firstLetter = word.slice(0, 1).toUpperCase();
+        const remainingLetters = word.slice(1);
+        const capitalizedWord = firstLetter + remainingLetters;
+        capitalized.push(capitalizedWord);
+
+    })
+
+    const updatedWords = capitalized.join(" ");
+    return updatedWords;
 }
 
-let dog = new Animal("25kmh", "Yorkie", "Mr", "Europe");
-let cat = new Animal("33kmhph", "Persian Cat", "Mrs", "Asia", 12);
-
-Animal.prototype.getAge = function () {
-    console.log(this.age); 
-}
-
-
-cat.getAge();
-dog.print();
-
-console.log(`The cat is fast like: ${cat.speed},  she is a ${cat.race}, a ${cat.sex},and she is located in ${cat.location} and is ${cat.age}`);
-
+console.log(manipulate(someString));
