@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailValidation</title>
+    <style>
+        .hide {
+            display: none;
+        }
+        .error {
+            color: red;
+            font-size: 0.8em;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+        input {
+            border-color: #ddd;
+            width: 400px;
+            display: block;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <h2></h2>
+    <form name="myform"> Email :
+        <input type="text" name="email"> <span class="error hide"></span>
+        <br> Password :
+        <input type="password" name="password"> <span class="error hide"></span>
+        <br> User Name :
+        <input type="text" name="userName"> <span class="error hide"></span>
+        <br>
+        <input type="submit" value="Sign Up">
+    </form>
+
+
+    <script>
+        const header = document.querySelector("h2");
+        if (localStorage.getItem("user")) {
+            let user = JSON.parse(localStorage.getItem("user"))
+            header.textContent = "Hello " + user.userName + "!";
+        }
+        const form = document.querySelector("form");
+        const input = document.querySelectorAll("input");
+        const errors = document.querySelectorAll(".error");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            errors.forEach(el => {
+                el.classList.add("hide");
+            });
+
+            const emailValue = input[0].value;
+
+            if (emailValue) {
+                const validatedEmail = emailValue.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi)
+                if (!validatedEmail) {
+                    addError(input[0], "Email not valid!");
+                }
+            }
+            else {
+                addError(input[0], "Empty String!")
+            }
+
+            const passValue = input[1].value;
+
+            if (passValue) {
+                const validatePass = passValue.match(/^[a-zA-Z0-9]{3,8}$/)
+                if (!validatePass) {
+                    addError(input[1], "Password must be 3-8 characters and contain only letters and numbers");
+                }
+            }
+            else {
+                addError(input[0], "Empty String!")
+            }
+
+            const nameValue = input[2].value;
+            if (!nameValue) {
+                addError(input[2], "Empty string!")
+            }
+
+            let jObject = {
+                "email": input[0].value,
+                "password": input[1].value,
+                "userName": input[2].value
+            }
+
+            let stringJObject = JSON.stringify(jObject);
+            localStorage.setItem("user", stringJObject);
+
+        });
+
+
+
+        function addError(element,errorMessage) {
+           let errorSpan = element.nextElementSibling;
+           errorSpan.classList.remove("hide");
+           errorSpan.textContent = errorMessage;
+           element.focus();
+        }
+
+
+    </script>
+</body>
+
+</html>

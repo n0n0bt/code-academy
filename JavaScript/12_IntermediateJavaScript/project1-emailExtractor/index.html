@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailExtractor</title>
+</head>
+
+<body>
+
+    <textarea name="txtarea" rows=2 cols=50></textarea> <button>Get Emails</button>
+    <textarea name="txtarea2" rows=2 cols=50></textarea>
+    <script>
+
+        let txtArea = document.getElementsByName("txtarea")[0];
+        let txtAreaa = document.getElementsByName("txtarea2")[0];
+
+        document.querySelector("button").addEventListener("click", function() {
+            const txtAreaContent = txtArea.value;
+            const emails = txtAreaContent.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
+            console.log(emails);
+            const uniqueEmails = [];
+
+            emails.forEach(email => {
+                if (!uniqueEmails.includes(email)) {
+                    uniqueEmails.push(email);
+                }
+            });
+
+            txtAreaa.value = uniqueEmails.join();
+          
+        });
+
+        
+    </script>
+</body>
+
+</html>
