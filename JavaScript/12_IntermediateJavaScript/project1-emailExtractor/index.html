@@ -10,7 +10,8 @@
 
 <body>
 
-    <textarea name="txtarea" rows=2 cols=50></textarea> <button>Get Emails</button>
+    <textarea name="txtarea" rows=2 cols=50></textarea>
+     <button>Get Emails</button>
     <textarea name="txtarea2" rows=2 cols=50></textarea>
     <script>
 
@@ -19,8 +20,10 @@
 
         document.querySelector("button").addEventListener("click", function() {
             const txtAreaContent = txtArea.value;
-            const emails = txtAreaContent.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
-            console.log(emails);
+
+            const emails = txtAreaContent.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi); // Regular expression, REGEX
+            console.log(emails); // Checking
+            
             const uniqueEmails = [];
 
             emails.forEach(email => {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-6</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            margin-top: 5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 >OnClick Example!</h1>
+
+    <div>
+        <button id="btn" onclick="alert('Do not dare to Click me!')">Click Me</button>
+    </div>
+    <br>
+    <div>
+        <button id="btn-1"  onclick="stop()">Click Me also</button>
+    </div>
+    <br>
+    <div>
+        <button id="btn-2" >Please!</button>
+    </div>
+
+
+    <script>
+
+    function stop() {
+        alert("Stop it!");
+    }
+    console.dir(document.getElementById("btn-2"));
+
+    document.getElementById("btn-2").onclick = function () {
+        alert("Why did you clicked me?"); // or you call other function
+    };
+
+    </script>
+
+</body>
+</html>

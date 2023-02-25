@@ -13,8 +13,10 @@ let jObj = [
     }
 ];
 
-jObj.forEach(el =>console.log(el.name));
+jObj.forEach(el => console.log(el.status));
 
 let obj2 = JSON.stringify(jObj);
 console.log(typeof obj2);
+
+
 

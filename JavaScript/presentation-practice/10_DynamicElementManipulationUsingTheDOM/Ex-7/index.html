@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-7</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            margin-top: 5em;
+        }
+        button{
+            background-color: grey;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        p {
+            text-shadow: 5px 1px 5px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="reveal(this)">Click here</button>
+    <br>
+    <p onclick="reveal(this)">Some Paragraph(Clickable)</p>
+
+
+    <script>
+        function reveal(el) {
+            console.dir(el);
+            el.style.color = "lightgrey";
+            el.style.marginTop = "30px";
+            console.dir(el.parentElement);
+        }
+    </script>
+
+</body>
+</html>

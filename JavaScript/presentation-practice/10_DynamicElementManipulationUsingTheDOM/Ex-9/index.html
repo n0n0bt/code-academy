@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-9</title>
+    <style>
+        #square {
+            margin: auto;
+        }
+    </style>
+</head>
+<body >
+    <div id="square" style="width: 100px; height: 100px; background-color:grey ;">Mouse over for Magic!
+    </div>
+
+
+
+
+
+
+    <script>
+        window.onload = function (){
+            document.getElementById("square").addEventListener("mouseover", changeColor);
+
+            function changeColor() {
+            let red = Math.floor(Math.random() * 256);
+            let green = Math.floor(Math.random() * 256);
+            let blue = Math.floor(Math.random() * 256);
+
+            this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            }
+
+        }
+
+        
+    </script>
+
+</body>
+</html>

@@ -22,6 +22,7 @@
             display: block;
             font-size: 1.5em;
         }
+
     </style>
 </head>
 
@@ -39,11 +40,11 @@
 
 
     <script>
-        const header = document.querySelector("h2");
-        if (localStorage.getItem("user")) {
-            let user = JSON.parse(localStorage.getItem("user"))
-            header.textContent = "Hello " + user.userName + "!";
-        }
+        // const header = document.querySelector("h2");
+        // if (localStorage.getItem("user")) {
+        //     let user = JSON.parse(localStorage.getItem("user"))
+        //     header.textContent = "Hello " + user.userName + "!";
+        // }
         const form = document.querySelector("form");
         const input = document.querySelectorAll("input");
         const errors = document.querySelectorAll(".error");
@@ -92,6 +93,7 @@
 
             let stringJObject = JSON.stringify(jObject);
             localStorage.setItem("user", stringJObject);
+            header.textContent = "Hello " + user.userName + "!";
 
         });
 

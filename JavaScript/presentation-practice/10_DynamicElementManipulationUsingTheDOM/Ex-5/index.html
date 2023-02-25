@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-5</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+            margin-top: 5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="example">Some Heading here!</h1>
+    <h3 class="example">Some Smaler Heading here!</h3>
+
+    <div>
+        <button class="example" onclick="alert('DontClick me')">Click</button>
+        <input type="text" class="example">
+    </div>
+
+
+    <script>
+        let myElement = document.querySelector(".example");
+        console.dir(myElement)
+        let inputEl = document.querySelectorAll("input")[0]; // document.querySelectorAll(".example")[3]
+        console.dir(inputEl)
+    </script>
+
+</body>
+</html>
