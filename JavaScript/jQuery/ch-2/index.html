@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+        background-color: #999b9c;
+    }
+
+    span {
+        display: block;
+        height: 200px;
+        width: 200px;
+        padding: 50px 0;
+        background-color: #20598f;
+
+    }
+
+    a{
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(78, 173, 132);
+        margin: 0 auto;
+    }
+
+    div p {
+        height: 200px;
+        width: 200px;
+        background-color: #34bbe4;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #searchBar {
+        background-color: #999b9c;
+        width: 177px;
+        padding: 0 5px;
+        margin-top: 3px;
+        border-radius: 3px;
+        list-style-type: none;
+
+    }
+</style>
+
+<body>
+    <div>
+        <span>
+            <a href=""></a>
+        </span>
+        <p></p>
+    </div>
+    <hr>
+    <input type="text">
+    <ul id="searchBar">
+        
+    </ul>
+    <button id="clickFade">Fade</button>
+    <p id="fade">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia in architecto molestias voluptatem incidunt! Temporibus nemo obcaecati eaque non placeat, rerum in accusamus quisquam laudantium pariatur nesciunt sequi exercitationem.
+    </p>
+</body>
+
+<script src="../jquery.js"></script>
+
+<script>
+
+    let colors = ["blue","red","green","yellow","black","white","grey","dark grey","light blue","pink"];
+
+    $("div").click(function (e) {
+        console.log("Div Clicked!");
+        let disp = $(this).css("display");
+        if (disp === "flex") {
+            $(this).css("display", "inline")
+        }
+    });
+
+    $("span").click(function (e) {
+        console.log("Span Clicked!");
+        e.stopPropagation();
+        
+
+    });
+
+    $("a").click(function (e) {
+        console.log($(e.target).is("a"));
+        e.preventDefault();
+        console.log("A Clicked!");
+        
+    });
+
+    $("p").click(function (e) {
+        console.log("P Clicked!");
+    });
+
+    $("input").keyup(function (e) {
+        $("#searchBar").html("");
+        let value = $("input").val();
+
+        let filteredArray = colors.filter(x => x.includes(value));
+
+        filteredArray.forEach(e => {
+            $("#searchBar").append(`<li>${e}</li>`)
+        });
+
+    })
+
+    // let fontSize = parseFloat($("#searchBar").css("font-size"));
+
+    // fontSize*=1.4;
+    // $("#searchBar").css("font-size", fontSize + "px");
+    // console.log(fontSize);
+
+    $("#clickFade").click(function (e) {
+        e.preventDefault();
+        $("#fade").slideToggle("fast");
+    })
+
+    // $("#clickFade").click(function(e) {
+    //     e.preventDefault();
+    //     $("#fade").animate({
+    //         fontSize: "24px"
+    //     },2500)
+    // })
+
+</script>
+</html>
