@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Refresh</button>
+    <script src="../jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            let generalData;
+            $.ajax({
+                url:"https://6408993f2f01352a8a97d4f5.mockapi.io/Perso",
+                success: function (response) {
+                    // let data = JSON.parse(response);
+                    
+                    console.log(response);
+                    showWeather(response);
+                }
+            });
+
+            function showWeather(data) {
+                $("#btn").click( () => {
+                    let index = Math.floor(Math.random() * data.length);
+                    let obj = data[index];
+
+                    for (const key in obj) {
+                        $("<p>" + obj[key] + "</p>").appendTo("body");
+                    }
+                })
+            }
+        });
+    </script>
+</body>
+</html>
